@@ -42,6 +42,9 @@ export default () => {
   const translateY = diffClamp(y, 0, size);
   const translateX = add(sub(x, modulo(x, caliber)), caliber / 2);
   const opacity = eq(state, State.ACTIVE);
+  console.log(translateY, 'translateY----')
+  console.log(translateX, 'translateX- - -- ')
+  console.log(state, 'state- - -- ')
   return (
     <View style={styles.container}>
       <View>
